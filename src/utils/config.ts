@@ -12,13 +12,13 @@ export interface IConfig {
 }
 
 export const config: IConfig = {
-    serverUrl: '', // http://localhost:5000/
-    captchaUrl: '', // url for requset captcha
-    verifyUrl: '', // url for for verify captcha
-    loginUrl: '', // url for authorization
+    serverUrl: 'http://localhost:5000/', // Укажите URL вашего сервера
+    captchaUrl: 'captcha', // URL для получения капчи
+    verifyUrl: 'captcha/verify', // URL для проверки капчи
+    loginUrl: 'auth/login', // URL для авторизации
     userData: {
-        email: '', // test@test.ru
-        password: '', // password
+        email: 'test@test.ru', // Ваш email
+        password: 'A2345678*', // Ваш пароль
     },
-    rucaptchaKey: 'YOUR_API_KEY', // rucaptcha key
+    rucaptchaKey: 'YOUR_API_KEY', // Ваш API-ключ 2Captcha
 };
